@@ -55,7 +55,7 @@ class BukuController extends Controller
             'judul' => 'required',
             'penulis' => 'required',
             'kategori' => 'required',
-            'sampul' => 'required|image|file|max:2048',
+            'sampul' => 'image|file|max:2048',
         ]);
         if ($request->file('sampul')) {
             if ($request->sampulLama) {
